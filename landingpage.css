@@ -38,7 +38,7 @@ body {
     align-items: center;
 }
 
-.prof-profile img {
+#Circlepicture {
     height: 50px;
     width: 50px;
     border-radius: 50%;
