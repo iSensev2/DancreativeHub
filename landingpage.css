@@ -17,19 +17,39 @@ body {
     overflow-x: hidden;
 }
 
-.flex-center {
+.top-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.top-nav {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.top-nav .nav-links {
+.Profile {
+    display: flex;
+    align-items: center;
+}
+
+.prof-profile {
+    position: fixed;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.prof-profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.My-Name {
+    font-size: 1.2rem;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -37,14 +57,14 @@ body {
     flex-grow: 1; /* Allows it to take available space for centering */
 }
 
-.top-nav .nav-links li a {
+.nav-links li a {
     color: #333;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
-.top-nav .nav-links li a:hover {
+.nav-links li a:hover {
     color: #3498db;
 }
 
@@ -93,6 +113,9 @@ body {
 }
 
 .Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     text-align: center;
 }
@@ -111,8 +134,8 @@ body {
 
 .text-content {
     max-width: 500px;
+    text-align: left;
 }
-
 
 .intro {
     font-size: 2rem;
@@ -173,8 +196,3 @@ footer {
         align-items: center;
     }
 }
-<<<<<<< HEAD
-   
-=======
-   
->>>>>>> f0cc0efc35963271bd691b3d277e5c99419a1a61
