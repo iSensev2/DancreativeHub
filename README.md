@@ -1,18 +1,31 @@
 Dan Louigie Dizon's Portfolio
-Welcome to my portfolio! I’m Dan Louigie Dizon, a passionate junior front-end developer with a keen interest in becoming a full-stack developer. This repository showcases my work and skills through various projects and a personal landing page.
+
+Welcome to my portfolio! 
+I’m Dan Louigie Dizon, a passionate junior front-end developer with a keen interest in becoming a full-stack developer. 
+This repository showcases my work and skills through various projects and a personal landing page.
 
 Table of Contents
+
 Landing Page
+
 Projects
+
 Technologies Used
+
 Contact
+
 Landing Page
+
 The landing page serves as the introductory part of my portfolio, featuring:
 
 Top Navigation Bar: Includes links to different sections of the site and a menu icon for mobile view.
+
 Sidebar: Accessible via the menu icon, providing navigation to the main sections.
+
 Main Section: Displays an introduction and profile picture.
+
 Screenshots:
+
 ![image](https://github.com/user-attachments/assets/3c690571-8f65-45c8-88b1-a23135235ff4)
 
 
