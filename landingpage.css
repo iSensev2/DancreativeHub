@@ -10,10 +10,10 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(180deg, #000000 2%, #00A86B, #228B22, #0B6623, #006400);
+    background: linear-gradient(180deg, #f9f9f9 2%, #fff);
     background-size: cover;
     font-family: 'Merriweather', serif;
-    color: white;
+    color: #333;
     overflow-x: hidden;
 }
 
@@ -22,7 +22,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Profile {
@@ -57,14 +58,14 @@ body {
 }
 
 .nav-links li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #00A86B;
+    color: #3498db;
 }
 
 .menu-icon {
@@ -84,7 +85,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -94,13 +95,13 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: #333;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #00A86B;
+    color: #3498db;
 }
 
 .sidebar .closebtn {
@@ -126,8 +127,9 @@ body {
     max-width: 900px;
     width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .text-content {
@@ -152,10 +154,11 @@ body {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     text-align: center;
     margin-top: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
@@ -169,62 +172,28 @@ footer {
     margin: 0;
 }
 
-.social-media {
-    display: flex;
-    gap: 20px;
-}
-
-.social-media a {
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #00A86B;
-}
+/* Responsive Design */
 
 @media (max-width: 768px) {
     .Main_container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .text-content {
+        max-width: 100%;
         text-align: center;
     }
 
-    .Mypicture {
+    .Main_container img.Mypicture {
         margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        right: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .Profile img {
-        height: 40px;
-        width: 40px;
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .My-Name {
-        font-size: 1rem;
-    }
-
-    .intro {
-        font-size: 1.2rem;
-    }
-
-    .social-media a {
-        font-size: 1.2rem;
-    }
-}
+   
