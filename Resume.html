@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Louigie Dizon - Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/resume.css">
+    <link rel="stylesheet" href="resume.css">
 </head>
 <body>
     <header class="container text-center">
@@ -21,42 +22,41 @@
         </section>
 
         <section class="skills">
-            <h2>Skills</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">HTML</h5>
-                    <p class="card-text">Solid understanding of semantic HTML5 markup.</p>
+            <h2>Technical Skills</h2>
+            <div class="skill-bar">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="bar">
+                    <div class="progress" style="width: 80%;"></div>
                 </div>
+                <span class="skill-level">80%</span>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">CSS</h5>
-                    <p class="card-text">Proficient in CSS3 for styling and animations.</p>
+            <div class="skill-bar">
+                <span class="skill-name">JavaScript</span>
+                <div class="bar">
+                    <div class="progress" style="width: 60%;"></div>
                 </div>
+                <span class="skill-level">60%</span>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Experience with vanilla JavaScript for front-end interactivity.</p>
+            <div class="skill-bar">
+                <span class="skill-name">C#</span>
+                <div class="bar">
+                    <div class="progress" style="width: 40%;"></div>
                 </div>
+                <span class="skill-level">40%</span>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">C#</h5>
-                    <p class="card-text">Knowledge in C# for backend development and application logic.</p>
+            <div class="skill-bar">
+                <span class="skill-name">UI/UX Design</span>
+                <div class="bar">
+                    <div class="progress" style="width: 90%;"></div>
                 </div>
+                <span class="skill-level">90%</span>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">UI/UX Design</h5>
-                    <p class="card-text">Design intuitive and responsive user interfaces.</p>
+            <div class="skill-bar">
+                <span class="skill-name">Responsive Design</span>
+                <div class="bar">
+                    <div class="progress" style="width: 80%;"></div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Responsive Design</h5>
-                    <p class="card-text">Design and develop responsive websites that work on any device.</p>
-                </div>
+                <span class="skill-level">80%</span>
             </div>
         </section>
 
@@ -73,4 +73,18 @@
                     <h5 class="card-title">Problem-Solving</h5>
                     <p class="card-text">Ability to analyze and solve complex problems efficiently.</p>
                 </div>
-           
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Update progress bar width based on skills level
+        const skills = document.querySelectorAll('.skill-bar');
+        skills.forEach((skill) => {
+            const progress = skill.querySelector('.progress');
+            const level = skill.querySelector('.skill-level').textContent;
+            progress.style.width = `${level}`;
+        });
+    </script>
+</body>
+</html>
