@@ -188,6 +188,18 @@ footer {
     .Main_container img.Mypicture {
         margin-left: 0;
     }
+
+    .My-Name {
+        display: none;
+    }
+
+    #Circlepicture {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
 }
 
 @media (max-width: 480px) {
